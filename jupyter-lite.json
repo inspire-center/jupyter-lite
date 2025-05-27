@@ -4,7 +4,19 @@
     "appName": "My Interactive Notebooks",
     "appVersion": "1.0.0",
     "appUrl": "./",
-    "fullAppUrl": "https://YOUR_USERNAME.github.io/my-jupyterlite-demo/"
+    "fullAppUrl": "https://YOUR_USERNAME.github.io/my-jupyterlite-demo/",
+    "disabledExtensions": [
+    "@jupyterlab/help-extension:plugin",
+    "@jupyterlab/settingeditor-extension:plugin"
+    ],
+       "pageConfig": {
+           "extraHead": [
+             "<style>",
+             ".jp-DocumentSubtitle { display: none !important; }",
+             ".jp-TrustIndicator { display: none !important; }",
+             "</style>"
+           ]
+         }
   },
   "litePluginSettings": {
     "@jupyterlite/pyodide-kernel-extension:kernel": {
