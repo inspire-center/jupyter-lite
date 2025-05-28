@@ -8,23 +8,7 @@
     "disabledExtensions": [
       "@jupyterlab/mainmenu-extension:plugin",
       "@jupyterlab/statusbar-extension:plugin"
-    ],
-    "pageConfig": {
-      "extraHead": [
-        "<style>",
-        "body, .jp-NotebookPanel, .jp-Cell, .jp-OutputArea {",
-        "  background: #121212 !important;",
-        "  color: #e0e0e0 !important;",
-        "}",
-        "header#jupyterlite-topbar, header.lm-Header, .jp-TopBar,",
-        "#header, #menubar, #maintoolbar, hr,",
-        ".jp-DocumentSubtitle, span.last_modified,",
-        ".jp-TrustIndicator, #trust_indicator {",
-        "  display: none !important;",
-        "}",
-        "</style>"
-      ]
-    }
+    ]
   },
   "litePluginSettings": {
     "@jupyterlab/apputils-extension:themes": {
