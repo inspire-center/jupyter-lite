@@ -4,23 +4,31 @@
     "appName": "My Interactive Notebooks",
     "appVersion": "1.0.0",
     "appUrl": "./",
-    "fullAppUrl": "https://YOUR_USERNAME.github.io/my-jupyterlite-demo/",
+    "fullAppUrl": "https://inspire-center.github.io/jupyter-lite/",
     "disabledExtensions": [
-    "@jupyterlab/help-extension:plugin",
-    "@jupyterlab/settingeditor-extension:plugin"
+      "@jupyterlab/mainmenu-extension:plugin",
+      "@jupyterlab/statusbar-extension:plugin"
     ],
-       "pageConfig": {
-           "extraHead": [
-             "<style>",
-             ".jp-DocumentSubtitle { display: none !important; }",
-             ".jp-TrustIndicator { display: none !important; }",
-             "</style>"
-           ]
-         }
+    "pageConfig": {
+      "extraHead": [
+        "<style>",
+        "body, .jp-NotebookPanel, .jp-Cell, .jp-OutputArea {",
+        "  background: #121212 !important;",
+        "  color: #e0e0e0 !important;",
+        "}",
+        "header#jupyterlite-topbar, header.lm-Header, .jp-TopBar,",
+        "#header, #menubar, #maintoolbar, hr,",
+        ".jp-DocumentSubtitle, span.last_modified,",
+        ".jp-TrustIndicator, #trust_indicator {",
+        "  display: none !important;",
+        "}",
+        "</style>"
+      ]
+    }
   },
   "litePluginSettings": {
-    "@jupyterlite/pyodide-kernel-extension:kernel": {
-      "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"
+    "@jupyterlab/apputils-extension:themes": {
+      "theme": "JupyterLab Dark"
     }
   }
 }
