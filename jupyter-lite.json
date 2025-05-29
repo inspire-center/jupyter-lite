@@ -4,11 +4,7 @@
     "appName": "My Interactive Notebooks",
     "appVersion": "1.0.0",
     "appUrl": "./",
-    "fullAppUrl": "https://inspire-center.github.io/jupyter-lite/",
-    "disabledExtensions": [
-      "@jupyterlab/mainmenu-extension:plugin",
-      "@jupyterlab/statusbar-extension:plugin"
-    ]
+    "fullAppUrl": "https://inspire-center.github.io/jupyter-lite/"
   },
   "litePluginSettings": {
     "@jupyterlite/pyodide-kernel-extension:kernel": {
