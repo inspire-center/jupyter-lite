@@ -4,11 +4,14 @@
     "appName": "My Interactive Notebooks",
     "appVersion": "1.0.0",
     "appUrl": "./",
-    "fullAppUrl": "https://YOUR_USERNAME.github.io/my-jupyterlite-demo/"
+    "fullAppUrl": "https://inspire-center.github.io/jupyter-lite/"
   },
   "litePluginSettings": {
     "@jupyterlite/pyodide-kernel-extension:kernel": {
       "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"
+    },
+    "@jupyterlab/apputils-extension:themes": {
+      "theme": "JupyterLab Dark"
     }
   }
 }
