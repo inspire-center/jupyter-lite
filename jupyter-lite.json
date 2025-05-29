@@ -11,6 +11,9 @@
     ]
   },
   "litePluginSettings": {
+    "@jupyterlite/pyodide-kernel-extension:kernel": {
+      "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"
+    },
     "@jupyterlab/apputils-extension:themes": {
       "theme": "JupyterLab Dark"
     }
